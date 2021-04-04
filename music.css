@@ -275,6 +275,7 @@
     border-radius: 35px;
     box-shadow: 0 15px 25px rgba(0,0,0,0.1);
     margin-bottom: 50px;
+    margin-left: 5px;
 }
 .navigation ul{
     position: absolute;
