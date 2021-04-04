@@ -231,22 +231,3 @@ function formatTime(sec_num) {
   }
   return (hours !== 0 ? hours + ":" : "") + minutes + ":" + seconds;
 }
-let list = document.querySelectorAll('.list');
-        let size = list.length;
-        for(let i = 0;i<size;i++)
-        {
-            list[i].onmouseover = function(){
-                let j = 0;
-                while(j<size){
-                    list[j++].className = 'list';
-                }
-                list[i].className = 'list active';
-            }
-        }
-        list.forEach(element => {
-            element.addEventListener("mouseenter",function(event){
-                let bg = document.querySelector('body');
-                let color = event.target.getAttribute('data-color')
-                bg.style.backgroundColor = color;
-            })
-        })
