@@ -24,11 +24,11 @@
     cursor: pointer;
   }
   .container {
-    min-width: 40rem;
+    width: 50rem;
     background-color: #fdfbfc86;
     box-shadow: 0 5px 10px rgb(223, 223, 223);
     border-radius: 10px;
-    height: 100%;
+    height: 70rem;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -40,6 +40,7 @@
     position: relative;
     text-align: center;
     width: 90%;
+    height: 90%;
     margin: 15px;
     border: 15px solid #fff;
     box-shadow: 0 5px 35px rgb(0 0 0 / 8%);
@@ -48,8 +49,8 @@
   }
   .thumbnail-song {
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: 13rem;
+    height: 13rem;
     overflow: hidden;
     display: inline-block;
     box-shadow: 0 0 5px #fff,
@@ -96,27 +97,31 @@
     margin-top: 1.25rem;
     margin-bottom: 2rem;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .song-name {
     color: rgba(255, 255, 255, 0.781);
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     width: 300px;
   }
   .info-song .author {
-    margin-top: 1rem;
-    font-size: 1.8rem;
+    margin-top: 1.2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
     color: rgba(255, 255, 255, 0.719);
   }
   .bar-song {
     display: flex;
     align-items: center;
-   
+    margin-top: 60px;
   }
   .current-time,.duration-time{
     color: rgb(179, 250, 255);
     font-weight: bold;
-   
     border-radius: 10px;
     width: 80px;
     box-shadow: 0 0 5px #e69f9f;
@@ -125,7 +130,7 @@
     margin-left: 2rem;
     margin-right: 2rem;
     width: 100%;
-    height: 1rem;
+    height: 1.2rem;
     overflow: hidden;
     position: relative;
     border-radius: 5px;
@@ -153,10 +158,11 @@
   .forward {
     border-radius: 50%;
     width: 4rem;
-    color: #f5e0e5;
+    color: #ff7092;
     height: 4rem;
     font-size: 1.8rem;
-    box-shadow: 0 0 5px #fff;
+    box-shadow: 0 0 5px #fff,
+    0 0 10px #fff;
   }
   
   .play-song {
@@ -264,4 +270,34 @@
   }
   .header button i{
     color: #72646f;
+  }
+
+  @media only screen and (max-width: 380px) {
+    body{
+      width: 375px;
+    }
+    .container{
+      width: 360px;
+      height: 550px;
+    }
+    .music-content{
+      padding: 1.5rem 1.5rem 2.5rem;
+      border: 10px solid #FFf;
+      margin: 8px;
+      width: 95%;
+      height: 95%;
+    }
+    .thumbnail-song{
+      width: 10rem;
+      height: 10rem;
+    }
+    .info-song .song-name{
+      font-size: 26px;
+    }
+    .info-song .author{
+      font-size: 20px;
+    }
+    .progress{
+      height: 1rem;
+    }
   }
